@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makanan Sayur Sehat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .vegetable-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .vegetable-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+        }
+        
+        .recipe-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .nutrition-fact {
+            background: rgba(76, 175, 80, 0.1);
+            border-left: 4px solid #4CAF50;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold">🌱 Sayur Sehat</h1>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#manfaat" class="hover:text-green-100 transition-colors">Manfaat</a></li>
+                        <li><a href="#jenis" class="hover:text-green-100 transition-colors">Jenis Sayur</a></li>
+                        <li><a href="#resep" class="hover:text-green-100 transition-colors">Resep</a></li>
+                        <li><a href="#tips" class="hover:text-green-100 transition-colors">Tips</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Makanan Sayur untuk Hidup Sehat</h2>
+                    <p class="text-xl mb-6">Temukan keajaiban dunia sayuran dan bagaimana mereka dapat mengubah kesehatan Anda</p>
+                    <button class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition-colors">
+                        Jelajahi Sekarang
+                    </button>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1bbd538-d6eb-49b2-aa09-c07b82bb5a9b.png" alt="Berbagai macam sayuran segar berwarna-warni seperti wortel, brokoli, tomat, dan bayam yang disusun rapi di atas meja kayu" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manfaat Sayur -->
+    <section id="manfaat" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Manfaat Konsumsi Sayuran</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="nutrition-fact p-6 rounded-lg">
+                    <div class="text-4xl text-green-600 mb-4">💪</div>
+                    <h3 class="font-semibold text-lg mb-2">Sumber Nutrisi</h3>
+                    <p class="text-gray-600">Kaya vitamin, mineral, dan antioksidan yang penting untuk tubuh</p>
+                </div>
+                
+                <div class="nutrition-fact p-6 rounded-lg">
+                    <div class="text-4xl text-green-600 mb-4">❤️</div>
+                    <h3 class="font-semibold text-lg mb-2">Jantung Sehat</h3>
+                    <p class="text-gray-600">Menurunkan risiko penyakit jantung dan stroke</p>
+                </div>
+                
+                <div class="nutrition-fact p-6 rounded-lg">
+                    <div class="text-4xl text-green-600 mb-4">⚖️</div>
+                    <h3 class="font-semibold text-lg mb-2">Berat Badan Ideal</h3>
+                    <p class="text-gray-600">Rendah kalori dan tinggi serat untuk kontrol berat badan</p>
+                </div>
+                
+                <div class="nutrition-fact p-6 rounded-lg">
+                    <div class="text-4xl text-green-600 mb-4">🛡️</div>
+                    <h3 class="font-semibold text-lg mb-2">Sistem Imun</h3>
+                    <p class="text-gray-600">Meningkatkan kekebalan tubuh dan melawan penyakit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jenis Sayuran -->
+    <section id="jenis" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Jenis-Jenis Sayuran Populer</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sayuran 1 -->
+                <div class="vegetable-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7fc33e0f-1b4a-4d4f-b0f0-bfe1a4b98b58.png" alt="Brokoli hijau segar dengan kuntum yang rapat dan batang yang kokoh" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-green-700 mb-2">Brokoli</h3>
+                        <p class="text-gray-600 mb-4">Kaya akan vitamin C, K, dan serat. Sumber antioksidan yang powerful.</p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Vitamin C: 89%</span>
+                            <span>Serat: 2.6g</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sayuran 2 -->
+                <div class="vegetable-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9d28dfd-9fe0-4be0-98d2-97c8b9b8e21e.png" alt="Wortel oranye cerah dengan daun hijau yang masih segar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-orange-600 mb-2">Wortel</h3>
+                        <p class="text-gray-600 mb-4">Sumber beta-karoten yang diubah menjadi vitamin A untuk kesehatan mata.</p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Vitamin A: 334%</span>
+                            <span>Serat: 2.8g</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sayuran 3 -->
+                <div class="vegetable-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/09552353-43bc-4e94-aab5-32c2ba0d9b4e.png" alt="Bayam hijau segar dengan daun lebar dan batang yang berair" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-green-800 mb-2">Bayam</h3>
+                        <p class="text-gray-600 mb-4">Tinggi zat besi, kalsium, dan vitamin K untuk kesehatan tulang.</p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Zat Besi: 15%</span>
+                            <span>Vitamin K: 460%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sayuran 4 -->
+                <div class="vegetable-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62eecf41-01bd-41b1-ae30-fed78fddc063.png" alt="Tomat merah matang dengan kulit mengkilap dan bentuk yang sempurna" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-red-600 mb-2">Tomat</h3>
+                        <p class="text-gray-600 mb-4">Kaya likopen, antioksidan yang melindungi dari kanker dan penyakit jantung.</p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Vitamin C: 28%</span>
+                            <span>Likopen: Tinggi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sayuran 5 -->
+                <div class="vegetable-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fd15a04a-d186-4168-8737-3a662c4b843a.png" alt="Kubis ungu dengan daun berkerut dan warna yang vibrant" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-purple-700 mb-2">Kubis Ungu</h3>
+                        <p class="text-gray-600 mb-4">Mengandung anthocyanin yang memiliki sifat anti-inflamasi dan anti-kanker.</p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Vitamin C: 85%</span>
+                            <span>Antioksidan: Tinggi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sayuran 6 -->
+                <div class="vegetable-card bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2947e607-b4bb-4f25-beac-6912df844331.png" alt="Paprika berwarna-warni merah, kuning, dan hijau dengan tekstur mengkilap" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-yellow-600 mb-2">Paprika</h3>
+                        <p class="text-gray-600 mb-4">Sumber vitamin C yang excellent dan mengandung capsaicin untuk metabolisme.</p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Vitamin C: 190%</span>
+                            <span>Kalori: Rendah</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resep Makanan Sayur -->
+    <section id="resep" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Resep Makanan Sayur Lezat</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Resep 1 -->
+                <div class="recipe-card p-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/98c47e34-4255-4630-b0cc-5bb74fb5f8bd.png" alt="Capcay sayuran dengan berbagai jenis sayuran segar dalam wajan dengan saus mengkilap" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="font-bold text-xl text-green-700 mb-2">Capcay Sayuran</h3>
+                    <p class="text-gray-600 mb-4">Campuran berbagai sayuran segar dengan saus oriental yang lezat.</p>
+                    <div class="bg-green-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-semibold text-green-800 mb-2">Bahan-bahan:</h4>
+                        <ul class="list-disc list-inside text-sm text-gray-700">
+                            <li>Wortel, brokoli, kembang kol</li>
+                            <li>Jamur, baby corn, sawi</li>
+                            <li>Bawang putih, jahe</li>
+                            <li>Saus tiram, kecap asin</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Resep 2 -->
+                <div class="recipe-card p-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a3e01df2-be7d-4f8b-9446-6db53d1c00c3.png" alt="Salad sayuran segar dengan daun hijau, tomat ceri, dan dressing yang segar" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="font-bold text-xl text-green-700 mb-2">Salad Sayuran Segar</h3>
+                    <p class="text-gray-600 mb-4">Salad sehat dengan dressing lemon-madu yang menyegarkan.</p>
+                    <div class="bg-green-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-semibold text-green-800 mb-2">Bahan-bahan:</h4>
+                        <ul class="list-disc list-inside text-sm text-gray-700">
+                            <li>Selada, rocket, bayam muda</li>
+                            <li>Tomat ceri, mentimun</li>
+                            <li>Alpukat, biji bunga matahari</li>
+                            <li>Lemon, madu, minyak zaitun</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Memasak -->
+    <section id="tips" class="py-16 bg-green-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Tips Memasak Sayuran</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl text-green-600 mb-4">🔥</div>
+                    <h3 class="font-semibold text-lg mb-2">Kukus, Jangan Rebus</h3>
+                    <p class="text-gray-600">Mengukus sayuran mempertahankan lebih banyak nutrisi dibanding merebus.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl text-green-600 mb-4">⏱️</div>
+                    <h3 class="font-semibold text-lg mb-2">Jangan Overcook</h3>
+                    <p class="text-gray-600">Masak sayuran sebentar agar tetap renyah dan nutrisi tidak hilang.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl text-green-600 mb-4">🍳</div>
+                    <h3 class="font-semibold text-lg mb-2">Stir-fry Cepat</h3>
+                    <p class="text-gray-600">Tumis sayuran dengan api besar dalam waktu singkat untuk hasil terbaik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">🌱 Sayur Sehat</h3>
+                    <p class="text-gray-300">Menyediakan informasi tentang manfaat sayuran dan resep sehat untuk kehidupan yang lebih baik.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Link Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#manfaat" class="text-gray-300 hover:text-white transition-colors">Manfaat Sayur</a></li>
+                        <li><a href="#jenis" class="text-gray-300 hover:text-white transition-colors">Jenis Sayuran</a></li>
+                        <li><a href="#resep" class="text-gray-300 hover:text-white transition-colors">Resep Sehat</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <p class="text-gray-300">Email: info@sayursehat.com</p>
+                    <p class="text-gray-300">Telepon: (021) 1234-5678</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>© 2024 Sayur Sehat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Simple animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+
